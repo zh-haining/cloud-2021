@@ -12,9 +12,11 @@
     <modules>
         <module>cloud-provider-payment8001</module>
         <module>cloud-consumer-order80</module>
+        <module>cloud-business-common</module>
     </modules>
 
     <properties>
+        <cloud-business-common.version>1.0-SNAPSHOT</cloud-business-common.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -55,6 +57,12 @@
                 <groupId>org.mybatis.spring.boot</groupId>
                 <artifactId>mybatis-spring-boot-starter</artifactId>
                 <version>${mybatis.spring.boot.verison}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.spnc</groupId>
+                <artifactId>cloud-business-common</artifactId>
+                <version>${cloud-business-common.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
