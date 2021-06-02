@@ -5,7 +5,7 @@ spring:
     restart:
       enabled: true  #设置开启热部署
   application:
-    name: cloud-payment-service1
+    name: cloud-payment-service
   datasource:
     # 当前数据源操作类型
     type: com.zaxxer.hikari.HikariDataSource
@@ -30,3 +30,11 @@ logging:
   level:
     com.zaxxer.hikari.pool.HikariPool: info
     com.spnc.mapper: debug
+eureka:
+  client:
+    # 是否从EurekaServer抓取已有的注册信息，默认为true，单节点无所谓
+    # 集群必须设置为 true，才能配置ribbon使用
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
