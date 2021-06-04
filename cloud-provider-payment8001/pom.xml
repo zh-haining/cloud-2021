@@ -50,5 +50,10 @@
             <groupId>com.spnc</groupId>
             <artifactId>cloud-business-common</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.spnc</groupId>
+            <artifactId>cloud-db-dao</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 </project>
