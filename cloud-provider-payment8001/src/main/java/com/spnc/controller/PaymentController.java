@@ -53,4 +53,14 @@ public class PaymentController {
     public CommonResult getPaymentLb() {
         return new CommonResult(200, "success", port);
     }
+
+    @GetMapping(value = "payment/timeout")
+    public CommonResult timeout() {
+        try {
+            Thread.sleep(3*1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return new CommonResult(200, "success", port);
+    }
 }

@@ -23,4 +23,9 @@ public class OrderController {
     public CommonResult<Payment> getPayment(@PathVariable("id") Long id) {
         return paymentService.getPayment(id);
     }
+
+    @GetMapping(value = "consumer/timeout")
+    public CommonResult timeout() {
+        return paymentService.timeout();
+    }
 }
