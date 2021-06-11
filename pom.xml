@@ -18,6 +18,8 @@
         <module>cloud-provider-payment8002</module>
         <module>cloud-db-dao</module>
         <module>cloud-openfeign-order-server8083</module>
+        <module>cloud-provider-hygtrix-payment8001</module>
+        <module>cloud-consumer-feign-hystrix-order80</module>
     </modules>
 
     <properties>
